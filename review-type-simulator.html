@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script> 
+      <script type="text/javascript">
+         /* page specific js */
+         
+         
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+                  
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+                  
+                  
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="index.html">myCASA</a></li>
+                     <li>Flight review notification</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Flight review notification</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+			 
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+					
+					<section class="au-callout">					
+					<h4>Simulator details</h4>
+<p><strong>Simulator ID:</strong> 00010011100110</p>
+					</section>
+					
+
+					
+					
+<h2>Review type</h2>
+
+                    
+                    					<div class="au-form-group">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">What was the simulator category?</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="assessed-simulator"
+                                       id="assessed-aeroplane" value="aeroplane">
+                                <label class="au-control-input__text" for="assessed-aeroplane">Aeroplane</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="assessed-simulator"
+                                       id="assessed-helicopter" value="helicopter">
+                                <label class="au-control-input__text" for="assessed-helicopter">Helicopter</label>
+                        </div>
+
+
+                        
+                    </fieldset>
+                    </div>  
+                    
+
+	                    <div class="au-form-group aerosim casa-hidden">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Please select the category of class or type used for the flight review conducted</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-class-type" id="cb-sec">
+           		<label class="au-control-input__text" for="cb-sec">Single engine class</label>
+                        </div>
+                        
+                                                <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-class-type" id="cb-mec">
+           		<label class="au-control-input__text" for="cb-mec">Multi engine class</label>
+                        </div>
+                        
+                                                <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-class-type" id="cb-tr" value="cb-tra">
+           		<label class="au-control-input__text" for="cb-tr">Type rating</label>
+                        </div>
+                        
+                                            <div class="au-form-group tra-dropdown casa-hidden">       
+                    <label for="select1block" class="au-label">Please select the type of aircraft used for the flight review conducted</label>
+                        <select id="select1block" class="au-select au-select--block">
+                            <option value="">Please select</option>                        
+                            <option value="1">A300</option>
+                            <option value="2">A300/310</option>
+                            <option value="3">A320</option>
+                            <option value="4">A330</option>
+                            <option value="5">A330(CR)</option>
+                            <option value="6">A340</option>
+                            <option value="7">A340(CR)</option>
+                            <option value="8">A380</option>
+                            <option value="9">A380(CR)</option>
+                            <option value="10">ALBATROSS</option>
+                            <option value="11">ASTRA </option>
+                            <option value="12">ATR42/72</option>
+                            <option value="13">B-25</option>
+                            <option value="14">B707</option>
+                            <option value="15">B717</option> 
+                            <option value="16">B727</option> 
+                            <option value="17">B737-100/200</option>
+                            <option value="18">B737-300 to 900</option> 
+                            <option value="19">B747</option> 
+                            <option value="20">B747-400</option> 
+                            <option value="21">B747-400(CR)</option>
+                            <option value="22">B747(CR)</option>
+                            <option value="23">B757/767</option>
+                            <option value="24">B767(CR)</option>
+                            <option value="25">B777/787</option> 
+                            <option value="26">B777/787(CR)</option>
+                            <option value="27">BAE ATP</option>
+                            <option value="28">BAE125</option> 
+                            <option value="29">BAE146</option>
+                            <option value="30">BBD700</option> 
+                            <option value="31">BE350/1900</option>
+                            <option value="32">BE400</option>
+                            <option value="33">BEAUFORT</option>
+                            <option value="34">C500/550/560</option>
+                            <option value="35">C500/550/560(SP)</option>
+                            <option value="36">C510</option>
+                            <option value="37">C510(SP)</option>
+                            <option value="38">C525</option>
+                            <option value="39">C525(SP)</option>
+                            <option value="40">C560XL</option>
+                            <option value="41">C650</option>
+                            <option value="42">C680</option>
+                            <option value="43">C750</option>
+                            <option value="44">CASA212</option>
+                            <option value="45">CATALINA</option>
+                            <option value="46">CL30</option>
+                            <option value="47">CL415</option>
+                            <option value="48">CL600/601</option> 
+                            <option value="49">CL604</option> 
+                            <option value="50">CL65</option> 
+                            <option value="51">CN235</option>
+                            <option value="52">CV340/440</option>
+                            <option value="53">CV580</option>
+                            <option value="54">DA10/100</option>
+                            <option value="55">DA20/200</option>
+                            <option value="56">DA2000</option>
+                            <option value="57">DA2000 EASy</option>
+                            <option value="58">DA50/900</option>
+                            <option value="59">DA7X</option>
+                            <option value="60">DA900 EASy</option>
+                            <option value="61">DC3</option>
+                            <option value="62">DC3TP</option>
+                            <option value="63">DC4</option>
+                            <option value="64">DC6</option>
+                            <option value="65">DC7</option>
+                            <option value="66">DC8</option>
+                            <option value="67">DC9</option>
+                            <option value="68">DHC4</option>
+                            <option value="69">DHC7</option>
+                            <option value="70">DHC8</option>
+                            <option value="71">DO228</option>
+                            <option value="72">DO328-100</option>
+                            <option value="73">DO328-JET</option>
+                            <option value="74">EA500</option>
+                            <option value="75">EA500(SP)</option>
+                            <option value="76">EMB-550</option>
+                            <option value="77">EMB120</option>
+                            <option value="78">EMB135/145</option>
+                            <option value="79">ERJ170/190</option>
+                            <option value="80">FK27</option>
+                            <option value="81">FK28</option>
+                            <option value="82">FK50</option>
+                            <option value="83">FK70/100</option>
+                            <option value="84">G-159</option>
+                            <option value="85">G-II/III</option>
+                            <option value="86">G-IV</option>
+                            <option value="87">G-V</option>
+                            <option value="88">G-VI</option>
+                            <option value="89">G150</option>
+                            <option value="90">G200</option>
+                            <option value="91">G280</option>
+                            <option value="92">G73</option>
+                            <option value="93">HS 748</option>
+                            <option value="94">J31/32</option>
+                            <option value="95">J41</option>
+                            <option value="96">L1049</option> 
+                            <option value="97">L188</option> 
+                            <option value="98">L382</option> 
+                            <option value="99">L420</option> 
+                            <option value="100">LR31/35/36</option> 
+                            <option value="101">LR45</option> 
+                            <option value="102">LR60</option>
+                            <option value="103">MD11</option>
+                            <option value="104">MD80</option> 
+                            <option value="105">MU2</option>
+                            <option value="106">NEPTUNE</option>
+                            <option value="107">PC-24</option>
+                            <option value="108">PHENOM</option>
+                            <option value="109">PHENOM(SP)</option>
+                            <option value="110">RA390</option>
+                            <option value="111">RA390(SP)</option>
+                            <option value="112">RA4000</option>
+                            <option value="113">SA226/227</option>
+                            <option value="114">SD330/360</option>
+                            <option value="115">SF340</option>
+                            <option value="116">SJ30</option>
+                            <option value="117">SJ30</option>
+                            <option value="118">WESTWIND</option>
+                            </select>    
+                                                </div>
+           
+                        
+                    </fieldset>
+
+				
+						                    <div class="au-form-group operational-rating">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Operational rating/s</h3>
+                            <span class="au-hint-text">You may select more than one</span>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="cb-nvfr">
+  <label class="au-control-input__text" for="cb-nvfr">Night VFR Rating</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="cb-pir">
+  <label class="au-control-input__text" for="cb-pir">Private IR Rating</label>
+                        </div>
+<div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex" id="cb-ll">
+  <label class="au-control-input__text" for="cb-ll">Low Level Rating</label>
+                        </div>
+           
+                        
+                    </fieldset>
+                    </div> 
+                    </div>
+
+                    
+                    	                    <div class="au-form-group helisim casa-hidden">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Please select the category of class or type used for the flight review conducted</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-class-type2" id="cb-sec2">
+           		<label class="au-control-input__text" for="cb-sec2">Single engine class</label>
+                        </div>
+                        
+                                                <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-class-type2" id="cb-tr2" value="cb-trh">
+           		<label class="au-control-input__text" for="cb-tr2">Type rating</label>
+                        </div>
+                        
+                                            <div class="au-form-group trh-dropdown casa-hidden">       
+                    <label for="select1block" class="au-label">Please select the type of aircraft used for the flight review conducted</label>
+                        <select id="select1block" class="au-select au-select--block">
+                          <option value="">Please select</option>            
+                        <option value="1">AS332/EC225</option>
+                        <option value="2">AS355</option>
+                        <option value="3">AS365/EC155</option>
+                        <option value="4">AW139</option>
+                        <option value="5">AW139(SP)</option>
+                        <option value="6">AW169</option>
+                        <option value="7">AW189</option>
+                        <option value="8">AW189(SP)</option>
+                        <option value="9">BELL 206LT</option>
+                        <option value="10">BH212/412</option>
+                        <option value="11">BH214</option>
+                        <option value="12">BH214ST</option>
+                        <option value="13">BH222/430</option>
+                        <option value="14">BH427</option>
+                        <option value="15">BH429</option>
+                        <option value="16">BK117/EC145</option>
+                        <option value="17">BO105</option>
+                        <option value="18">EC135</option>
+                        <option value="19">EC175</option>
+                        <option value="20">EC175(SP)</option>
+                        <option value="21">EH101</option>
+                        <option value="22">K1200</option>
+                        <option value="23">MD900</option>
+                        <option value="24">ROTORWAY EXEC</option>
+                        <option value="25">S-64</option>
+                        <option value="26">SA330</option>
+                        <option value="27">SK55</option>
+                        <option value="28">SK58</option>
+                        <option value="29">SK58T</option>
+                        <option value="30">SK61</option>
+                        <option value="31">SK61(SP)</option>
+                        <option value="32">SK62</option>
+                        <option value="33">SK64</option>
+                        <option value="34">SK70</option> 
+                        <option value="35">SK76</option>
+                        <option value="36">SK76(SP)</option>
+                        <option value="37">SK92</option> 
+                        <option value="38">W3A</option>
+                    </select>    
+                    </div>
+                        
+                    </fieldset>
+
+				
+						                    <div class="au-form-group operational-rating">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Operational rating/s</h3>
+                            <span class="au-hint-text">You may select more than one</span>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex2" id="cb-nvfr2">
+  <label class="au-control-input__text" for="cb-nvfr2">Night VFR Rating</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex2" id="cb-pir2">
+  <label class="au-control-input__text" for="cb-pir2">Private IR Rating</label>
+                        </div>
+<div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex2" id="cb-ll2">
+  <label class="au-control-input__text" for="cb-ll2">Low Level Rating</label>
+                        </div>
+           
+                        
+                    </fieldset>
+                    </div> 
+                    </div>
+
+
+
+
+				   
+				<div class="au-form-group">
+
+				<a class="au-btn" href="application-summary-sim.html">Next</a>
+					
+
+
+
+
+					
+
+				</div>
+				               <hr />
+            <a href="arn-saved.html" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>  
+				   
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+           
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+		  <script>
+		  $("input[name=assessed-simulator]").on("change", function () {
+        if ($(this).val() === "aeroplane") {
+            $(".aerosim").removeClass("casa-hidden");
+            $(".helisim").addClass("casa-hidden");
+        } else if ($(this).val() === "helicopter") {
+            $(".aerosim").addClass("casa-hidden");
+            $(".helisim").removeClass("casa-hidden");
+        }
+    });
+              
+              		  $("input[name=checkbox-class-type]").on("click", function () {
+        if ($(this).val() === "cb-tra") {
+            $(".tra-dropdown").toggleClass("casa-hidden");
+        }
+    });
+              
+                    $("input[name=checkbox-class-type2]").on("click", function () {
+        if ($(this).val() === "cb-trh") {
+            $(".trh-dropdown").toggleClass("casa-hidden");
+        }
+    });
+
+		  </script>	
+   </body>
+</html>
