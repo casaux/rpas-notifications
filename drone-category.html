@@ -55,12 +55,12 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="index.html">myCASA</a></li>
-                     <li>Excluded category drone notification</li>
+                     <li>Excluded category notification</li>
                   </ul>
                </nav>
 			 <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Excluded category drone notification</h1>
+                  <h1 class="break desktop au-header-heading">Excluded category notification</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
@@ -69,16 +69,17 @@
 <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 
-					
+					<h2>Drone category</h2>
 					
 					<div class="au-form-group">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Select the drone category/ categories you will be flying.</h3>
+                            <h3 class="au-display-sm">Select the drone category/categories you will be flying.</h3>
+                            <span class="au-hint-text">You may select more than one</span>
                         </legend>
                       <div class="au-control-input au-control-input--block">
                         <input class="au-control-input__input" type="checkbox" name="1" id="1">
-                          <label class="au-control-input__text" for="1">Multi-rotor helicopter</label>
+                          <label class="au-control-input__text" for="1">Multi-rotor</label>
                         </div>
                         <div class="au-control-input au-control-input--block">
                           <input class="au-control-input__input" type="checkbox" name="2" id="2">
@@ -103,28 +104,7 @@
 
 				
 				
-				<div class="casa-section vh-mark casa-hidden">
-					<div class="au-form-group">
-                        <label class="au-label" for="name">VH Mark</label>
-					<div class="row">
-					<div class="col-lg-2 col-xs-2">
-						<span style="font-size: 2rem">VH -</span>
-					</div>	
-						<div class="col-lg-10 col-xs-10">
-					
-				<input class="au-text-input au-text-input--block" name="vh-mark" id="vh-mark" type="text" value="">		
-				</div>
-				</div>
-				</div>	
-				</div>
-				
-				<div class="casa-section simulator casa-hidden">
-					
-					<div class="au-form-group">
-                        <label class="au-label" for="name"><abbr title="Flight simulation training device">FSTD</abbr> certificate number</label>
-                 <input class="au-text-input au-text-input--block" name="simulator-id"id="simulator-id" type="text" value="">
-               	</div>
-					</div>
+			
 
 
 				   
@@ -159,23 +139,6 @@
             </div>
          </div>
       </main>
-		  <script>
-		  $("input[name=assessed-simulator]").on("change", function () {
-        if ($(this).val() === "select-review") {
-            $(".vh-mark").removeClass("casa-hidden");
-            $(".simulator").addClass("casa-hidden");
-        } else if ($(this).val() === "select-review-sim") {
-            $(".vh-mark").addClass("casa-hidden");
-            $(".simulator").removeClass("casa-hidden");
-        }
-    });
-
- $("#navigate a"). click(function(){
-				var radioValue = $("input[name='assessed-simulator']:checked"). val();
-				window.location.href=radioValue+".html";
-			 }); 
-
-
-		  </script>	  
+		 
    </body>
 </html>
